@@ -13,6 +13,10 @@ const teachers = [
 const fourthTeacher = null;
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
+// Using direct assignment to change an array element
+
+teachers[5] = "Patrick";
+console.log(teachers);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = teachers.pop();
@@ -38,8 +42,10 @@ const lewisIndex = teachers.indexOf(`lewis`);
 console.log(lewisIndex)
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+const teachersString = teachers.toString(`,`);
+console.log(teachersString)
 
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
+const isTeachersEmpty = teachers.length;
+console.log(isTeachersEmpty)
